@@ -1,0 +1,399 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Adding CSS styling here */
+
+/*General Styling*/
+
+:root{
+  --clr-primary: #009688;
+  --clr-secondary: #1eac9d;
+}
+
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+    
+}
+html{
+  font-size:62.5%; 
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #4f4f4f;
+  font-size: 1.6rem;
+  
+}
+
+h1,h2{
+   font-size: 3rem; 
+}
+
+section{
+  padding:  0;
+} 
+
+/*Navigation Styling */
+
+
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr-primary);
+  color: white;
+  
+}
+
+.name{
+  font-size: 4rem;
+  margin: 3rem;
+}
+
+.navbar ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 6rem;
+  
+}
+
+/* .navbar-links li:hover{
+  color: #44BBA4;
+}
+.navbar-links li::before{
+  content: "";
+  position: absolute;
+  background-color: var(--clr-secondary) ;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+
+
+
+.navbar-links li :hover:after{
+  width:100%
+} */
+
+  
+
+/* Main Section with photo and paragraph about myself*/
+
+.main-photo{
+  max-width:80%;
+  min-width: 30%;
+  padding: 4%
+}
+
+
+.intro{
+  
+  display: flex;
+}
+
+
+.info-about-me{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  
+}
+
+.info-about-me p{
+  width: 80%;
+ 
+
+}
+
+
+/* Top section of projects */
+.top-section{
+  display: flex;
+  padding-bottom: 2%;
+  border-top: 4px solid var(--clr-secondary);
+}
+
+.top-section img{
+  width:100%;
+  padding: 0 6%;
+  margin-top: 8%;
+}
+
+h3{
+  display: flex;
+  justify-content: center;
+}
+
+/*Bottom Section of Projects*/
+
+.bottomSection{
+  display: flex;
+  padding-bottom: 2%;
+}
+
+.bottomSection img{
+  width:100%;
+  padding: 2% 6%;
+}
+/*Contact me section */
+
+footer{
+border-top: 4px solid var(--clr-secondary);
+
+
+
+}
+
+footer p{
+  text-align: center;
+  margin-top: 2%;
+  font-weight:bold;
+}
+
+
+
+.hire-me{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  
+}
+
+.hire-me a {
+  text-decoration: none; ;
+}
+
+.git{
+  justify-content: center;
+  align-items: center;
+}
+
+.linkedin{
+  justify-content: center;
+  align-items: center;
+}
+
+footer img{
+  width:15%;
+  margin-left: 40%;
+}
+
+/*Responsive-Design Section */
+
+/* @media (min-width:200px) and (max-width: 450px) {
+  h1{
+    font-size: 1.8rem;
+  }
+
+  nav{
+    display: flex;
+    width: 100%
+  }
+  nav a{
+    
+  }
+
+  .mobile-menu-exit{
+    display: none;
+    align-items: right;
+  }
+
+.mobile-menu{
+  align-items: center;
+  padding-right: 5%;
+}
+  #mobile-cta:hover{
+    cursor: pointer
+  }
+
+  .info-about-me p{
+    float: left;
+    font-size: 1.25rem;
+  
+  }
+  
+  .main-photo{
+    height: 25vh;
+  }
+
+  footer p{
+    font-size: 1.25rem;
+  }
+
+  .myprojects p{
+    font-size: 1rem
+  }
+}
+
+@media (min-width:450px) and (max-width: 800px) {
+  h1{
+    font-size: 2rem;
+  }
+  nav a{
+    font-size: 1.25rem;
+  }
+
+  .mobile-menu-exit{
+    display: none;
+  }
+
+  .mobile-menu{
+    display: none;
+  }
+
+  #mobile-cta:hover{
+    cursor: pointer
+  }
+  
+}
+
+@media (min-width: 800px){
+    
+  
+  .intro{
+    width: 100%;
+  }
+
+  .main-photo{
+    width: 40%
+  }
+
+  .main-photo img{
+    width: 100%
+  }
+  h1{
+    font-size: 3rem;
+    font-weight: 300;
+  
+    
+  }
+  nav a{
+    font-size: 2rem;
+    
+  }
+
+  .info-about-me{
+    margin-bottom: 3%;
+    width: 60%;
+  }
+
+  .info-about-me p{
+    font-size: 2.5rem;
+    text-transform: left;
+  }
+  .mobile-menu-exit{
+    display: none;
+  }
+
+  .mobile-menu{
+    display: none;
+  }
+
+  #mobile-cta:hover{
+    cursor: pointer
+  }
+  
+  footer p{
+    font-size: 2rem;
+  }
+
+  .myprojects{
+    margin: 3% 0
+  }
+  
+}
+
+
+
+
+@media (min-width:1000px) and (max-width: 1900px) {
+
+  .mobile-menu-exit{
+    display: none;
+  }
+
+  .mobile-menu{
+    display: none;
+  }
+
+  nav a{
+    font-size: 2rem;
+  }
+
+  .info-about-me p{
+    font-size: 2rem;
+  }
+
+  .myprojects h3{
+    font-size: 2rem;
+  } 
+}
+
+
+
+
+
+ */
