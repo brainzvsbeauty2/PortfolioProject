@@ -371,6 +371,10 @@ footer img{
    font-size: 1.8rem;
    padding: 1.2em .5em; 
  }
+	
+.my-projects{
+flex-direction: column;	
+}	
   
   
   h3{
