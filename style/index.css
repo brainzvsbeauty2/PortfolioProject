@@ -388,6 +388,14 @@ flex-direction: column;
   footer{
     margin-bottom: 5%;
   }
+	
+.top-section{
+	flex-direction:column;
+}
+
+bottomSection{
+	flex-direction: column;
+
 }
 
 @media screen and (min-width:900px ) and (max-width: 1400px){
