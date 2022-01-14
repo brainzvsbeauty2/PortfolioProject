@@ -113,28 +113,28 @@ section{
   
 }
 
-/* .navbar-links li:hover{
-  color: #44BBA4;
+.navbar-links a:hover{
+  color: black;
 }
-.navbar-links li::before{
-  content: "";
+
+.toggle-button{
   position: absolute;
-  background-color: var(--clr-secondary) ;
-  height: 2px;
-  width: 0;
-  left: 0;
-  bottom: -5px;
-  transition: 0.3s;
+  top: .75rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
 }
-
-
-
-
-.navbar-links li :hover:after{
-  width:100%
-} */
-
   
+.toggle-button .bar{
+  height: 3px;
+  width: 100%; 
+  background-color: white;
+  border-radius: 10px;
+  
+}
 
 /* Main Section with photo and paragraph about myself*/
 
@@ -243,157 +243,40 @@ footer img{
 
 /*Responsive-Design Section */
 
-/* @media (min-width:200px) and (max-width: 450px) {
-  h1{
-    font-size: 1.8rem;
-  }
+@media (max-width: 600px){
 
-  nav{
-    display: flex;
-    width: 100%
-  }
-  nav a{
-    
-  }
-
-  .mobile-menu-exit{
-    display: none;
-    align-items: right;
-  }
-
-.mobile-menu{
-  align-items: center;
-  padding-right: 5%;
-}
-  #mobile-cta:hover{
-    cursor: pointer
-  }
-
-  .info-about-me p{
-    float: left;
-    font-size: 1.25rem;
-  
-  }
-  
-  .main-photo{
-    height: 25vh;
-  }
-
-  footer p{
-    font-size: 1.25rem;
-  }
-
-  .myprojects p{
-    font-size: 1rem
-  }
-}
-
-@media (min-width:450px) and (max-width: 800px) {
-  h1{
+  .name{
     font-size: 2rem;
-  }
-  nav a{
-    font-size: 1.25rem;
-  }
-
-  .mobile-menu-exit{
-    display: none;
-  }
-
-  .mobile-menu{
-    display: none;
-  }
-
-  #mobile-cta:hover{
-    cursor: pointer
-  }
-  
-}
-
-@media (min-width: 800px){
     
-  
-  .intro{
+  }
+  .toggle-button{
+    display: flex;
+  }
+
+  .navbar-links{
+    display: none;
     width: 100%;
   }
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
 
-  .main-photo{
-    width: 40%
-  }
-
-  .main-photo img{
-    width: 100%
-  }
-  h1{
-    font-size: 3rem;
-    font-weight: 300;
-  
-    
-  }
-  nav a{
-    font-size: 2rem;
-    
   }
 
-  .info-about-me{
-    margin-bottom: 3%;
-    width: 60%;
+  .navbar-links ul{
+    width: 100%;
+    flex-direction: column;
   }
 
-  .info-about-me p{
-    font-size: 2.5rem;
-    text-transform: left;
-  }
-  .mobile-menu-exit{
-    display: none;
+  .navbar-links li{
+    text-align: right;
   }
 
-  .mobile-menu{
-    display: none;
+  .navbar-links li a {
+    padding: .5rem 1rem;
   }
-
-  #mobile-cta:hover{
-    cursor: pointer
-  }
-  
-  footer p{
-    font-size: 2rem;
-  }
-
-  .myprojects{
-    margin: 3% 0
-  }
-  
+.navbar-links.active{
+display: flex;
 }
 
-
-
-
-@media (min-width:1000px) and (max-width: 1900px) {
-
-  .mobile-menu-exit{
-    display: none;
-  }
-
-  .mobile-menu{
-    display: none;
-  }
-
-  nav a{
-    font-size: 2rem;
-  }
-
-  .info-about-me p{
-    font-size: 2rem;
-  }
-
-  .myprojects h3{
-    font-size: 2rem;
-  } 
 }
-
-
-
-
-
- */
