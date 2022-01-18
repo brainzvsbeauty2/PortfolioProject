@@ -93,12 +93,11 @@ section{
   align-items: center;
   background-color: var(--clr-primary);
   color: white;
-  width: 100%;
   
 }
 
 .navbar .navbar-links{
-  width: 40%;
+  width: 60%;
 }
 
 .name{
@@ -272,7 +271,7 @@ footer img{
 
 /*Responsive-Design Section */
 
-@media screen and (max-width: 600px) and (min-width: 200px) {
+@media screen and (max-width: 700px) and (min-width: 200px) {
 
   .name{
     font-size: 2rem;
@@ -281,11 +280,11 @@ footer img{
   .toggle-button{
     display: flex;
     margin-top: 5%;
-    margin-right: 2%;
+    margin-right: 6%;
     
   }
 
-  .navbar-links{
+  .navbar .navbar-links{
     display: none;
     width: 100%;
     text-align: end;
@@ -354,20 +353,26 @@ footer img{
 
 
 
-@media screen and (max-width: 1200px) and (min-width: 600px) {
+@media screen and (max-width: 1000px) and (min-width: 700px) {
 
 
 .bar{
   display: none;
 }
 
-.name{
-  font-size: 2.5rem;
-  width: 30%
+.intro{
+  margin: 3% 0;
+  margin-bottom: 3%
 }
 
+.name{
+  font-size: 2rem;
+  width: 50%;
+}
+
+
 .intro img{
-  width: 30%;
+  width: 20%;
   float: left;
   margin-left: 2em;
   margin-right: 6%;
@@ -380,30 +385,35 @@ footer img{
 }
 
 ul li{
-  padding: 0 3%;
+  padding: 0 1%;
+  width: 22%;
+  
+}
+.navbar .navbar-links{
   width: 100%;
 }
 
-.navbar-links{
-  width: 70%;
-}
-
 .navbar-links li a{
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .hire-me img{
   margin-left: 40%
 }
 
-.intro{
-  
-  margin: 2% 0;
-}
-
 
 footer p{
   font-size: 2rem;
+}
+
+.top-section{
+  flex-direction: column;
+  margin-left: 8%;
+}
+
+.bottomSection{
+  flex-direction: column;
+  margin-left: 8%;
 }
 
 }
@@ -417,17 +427,22 @@ footer p{
   
   .name{
     font-size: 3rem;
+    float: left;
   }
 
   .navbar-links li a{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+  }
+
+  .navbar .navbar-links{
+    width: 50%;
   }
   
   .intro img{
     width: 20%;
   }
   .intro p{
-    font-size: 2rem;
+    font-size: 2.2rem;
     padding: 2% 
   }
   
@@ -442,10 +457,14 @@ footer p{
   }
 
  footer p{
-   font-size: 2rem;
+   font-size: 2.2rem;
  }
 
  .intro{
   display: flex;
+}
+
+h3{
+  font-size: 2.2rem;
 }
   }
